@@ -1,49 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>隐私政策</title>
-  <style type="text/css">
-    body { background-color: #123f52; color:#FFF; font-size:21px; }
-    p { margin-left: 20px; }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - HiBoyS2</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#123f52',
+            secondary: '#1e607a',
+            accent: '#33b1cc',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .text-balance {
+        text-wrap: balance;
+      }
+      .section-fade {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .section-fade:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+      }
+    }
   </style>
 </head>
-<body>
-  <h2 style="text-align:center;">
-    <strong>HiBoyS2 应用隐私政策</strong>
-  </h2>
+<body class="bg-gray-50 font-sans text-gray-800">
+  <!-- Header Section -->
+  <header class="bg-primary text-white py-12 px-4 md:px-8">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-3xl md:text-4xl font-bold text-center mb-2">HiBoyS2 App</h1>
+      <h2 class="text-xl md:text-2xl text-center text-accent font-semibold">Privacy Policy</h2>
+      <div class="w-24 h-1 bg-accent mx-auto mt-6 rounded-full"></div>
+    </div>
+  </header>
 
-  <strong>1. 隐私保护</strong><br />
-  <p>
-    1.1 本应用不会对外公开或向第三方提供任何单个用户的个人信息或使用数据，但在以下情况除外：<br />
-    (1) 已获得用户的明确授权；<br />
-    (2) 根据法律法规的要求；<br />
-    (3) 应政府相关部门的要求；<br />
-    (4) 为维护社会公共利益或合法权利。<br /><br />
-    1.2 在与第三方合作提供相关功能时，如第三方同意承担与本应用同等的用户隐私保护责任，本应用可在必要范围内向其提供信息以实现功能，且无须另行通知用户。<br />
-    1.3 在不泄露用户个人信息的前提下，本应用可对用户数据进行匿名统计与分析，并用于产品优化等合法用途。
-  </p>
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto px-4 py-12 md:py-16">
+    <!-- Introduction Card -->
+    <div class="bg-white rounded-xl shadow-md p-6 md:p-8 mb-10 section-fade">
+      <p class="text-gray-700 leading-relaxed text-balance">
+        This privacy policy explains how we collect, use, and protect your information when you use the HiBoyS2 app. We are committed to safeguarding your privacy and ensuring transparent handling of your data.
+      </p>
+    </div>
 
-  <strong>2. 协议修改</strong><br />
-  <p>
-    2.1 本应用有权在必要时修改本隐私政策。政策变更后将通过应用内公告或页面更新方式通知用户。<br /><br />
-    2.2 若用户不同意修改内容，可选择停止使用本应用。若继续使用，则视为接受修改后的隐私政策条款。
-  </p>
+    <!-- Privacy Protection Section -->
+    <section class="bg-white rounded-xl shadow-md p-6 md:p-8 mb-10 section-fade">
+      <div class="flex items-center mb-6">
+        <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center mr-4">
+          <i class="fa fa-shield text-white"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-primary">1. Privacy Protection</h3>
+      </div>
+      
+      <div class="pl-14">
+        <p class="text-gray-700 leading-relaxed mb-6">
+          1.1 This app will not disclose or provide any individual user's personal information or usage data to third parties, except in the following cases:
+        </p>
+        
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2 pl-4">
+          <li>(1) Explicit authorization has been obtained from the user;</li>
+          <li>(2) As required by laws and regulations;</li>
+          <li>(3) As requested by relevant government departments;</li>
+          <li>(4) To safeguard public interests or legitimate rights.</li>
+        </ul>
+        
+        <p class="text-gray-700 leading-relaxed mb-4">
+          1.2 When cooperating with third parties to provide relevant functions, if the third party agrees to assume the same user privacy protection responsibilities as this app, this app may provide information to them within the necessary scope to realize the functions, without separately notifying the user.
+        </p>
+        
+        <p class="text-gray-700 leading-relaxed">
+          1.3 Without disclosing users' personal information, this app may conduct anonymous statistics and analysis on user data and use it for legitimate purposes such as product optimization.
+        </p>
+      </div>
+    </section>
 
-  <strong>3. APP内权限说明</strong><br />
-  <p>
-    3.1 <strong>蓝牙权限</strong><br />
-    (1) 本应用需要使用蓝牙权限以连接 HiBoyS2 设备，实现设备控制与数据交互。<br />
-    (2) 本权限仅用于设备连接相关功能，不用于收集或存储任何用户信息。<br /><br />
+    <!-- Agreement Modifications Section -->
+    <section class="bg-white rounded-xl shadow-md p-6 md:p-8 mb-10 section-fade">
+      <div class="flex items-center mb-6">
+        <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center mr-4">
+          <i class="fa fa-file-text-o text-white"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-primary">2. Agreement Modifications</h3>
+      </div>
+      
+      <div class="pl-14">
+        <p class="text-gray-700 leading-relaxed mb-4">
+          2.1 This app reserves the right to modify this privacy policy when necessary. After the policy is changed, users will be notified through in-app announcements or page updates.
+        </p>
+        
+        <p class="text-gray-700 leading-relaxed">
+          2.2 If users do not agree with the modified content, they may choose to stop using this app. Continued use will be deemed as acceptance of the modified privacy policy terms.
+        </p>
+      </div>
+    </section>
 
-    3.2 <strong>定位权限</strong><br />
-    (1) 由于 Android 和 iOS 系统要求蓝牙扫描必须授予位置权限，应用可能会申请定位权限以实现蓝牙功能。<br />
-    (2) 本应用不会收集或使用您的实际位置信息，该权限仅为系统兼容性所需。<br /><br />
+    <!-- Permissions Section -->
+    <section class="bg-white rounded-xl shadow-md p-6 md:p-8 section-fade">
+      <div class="flex items-center mb-6">
+        <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center mr-4">
+          <i class="fa fa-key text-white"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-primary">3. App Permissions Explanation</h3>
+      </div>
+      
+      <div class="pl-14 space-y-8">
+        <!-- Bluetooth Permission -->
+        <div>
+          <h4 class="text-xl font-semibold text-secondary mb-3">3.1 Bluetooth Permission</h4>
+          <ul class="list-disc list-inside text-gray-700 space-y-2 pl-4">
+            <li>(1) This app needs to use Bluetooth permission to connect to the HiBoyS2 device, enabling device control and data interaction.</li>
+            <li>(2) This permission is only used for device connection-related functions and not for collecting or storing any user information.</li>
+          </ul>
+        </div>
+        
+        <!-- Location Permission -->
+        <div>
+          <h4 class="text-xl font-semibold text-secondary mb-3">3.2 Location Permission</h4>
+          <ul class="list-disc list-inside text-gray-700 space-y-2 pl-4">
+            <li>(1) Since Android and iOS systems require location permission for Bluetooth scanning, the app may request location permission to implement Bluetooth functions.</li>
+            <li>(2) This app will not collect or use your actual location information; this permission is only required for system compatibility.</li>
+          </ul>
+        </div>
+        
+        <!-- Network Access Permission -->
+        <div>
+          <h4 class="text-xl font-semibold text-secondary mb-3">3.3 Network Access Permission</h4>
+          <ul class="list-disc list-inside text-gray-700 space-y-2 pl-4">
+            <li>(1) This app uses network access permission for functions such as checking device firmware versions and obtaining update information.</li>
+            <li>(2) All network-connected behaviors are only for function implementation and will not upload user privacy information or share it with third parties.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    3.3 <strong>网络访问权限</strong><br />
-    (1) 本应用使用网络访问权限用于检查设备固件版本、获取更新信息等功能。<br />
-    (2) 所有联网行为均仅服务于功能实现，不会上传用户隐私信息或与第三方共享。
-  </p>
+  <!-- Footer -->
+  <footer class="bg-primary text-white py-8 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="mb-2">Last updated: July 2025</p>
+      <p class="text-sm text-gray-300">For questions about this privacy policy, please contact our support team.</p>
+    </div>
+  </footer>
+
+  <!-- Simple animation script -->
+  <script>
+    // Add smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Add fade-in effect on scroll
+    document.addEventListener('DOMContentLoaded', () => {
+      const sections = document.querySelectorAll('section');
+      
+      const fadeInOnScroll = () => {
+        sections.forEach(section => {
+          const sectionTop = section.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+          
+          if (sectionTop < windowHeight * 0.85) {
+            section.style.opacity = '1';
+            section.style.transform = 'translateY(0)';
+          }
+        });
+      };
+      
+      // Initial check
+      fadeInOnScroll();
+      
+      // Check on scroll
+      window.addEventListener('scroll', fadeInOnScroll);
+    });
+  </script>
 </body>
 </html>
 
